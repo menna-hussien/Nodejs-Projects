@@ -10,7 +10,7 @@ const getAllProducts = async (req, res) => {
 };
 
 const getfeaturedProducts = async (req, res) => {
-  const { featured, company, name, sort, fields } = req.query;
+  const { featured, company, name, sort, fields, page } = req.query;
   const queryObject = {};
   if (featured) {
     queryObject.featured = featured === 'true' ? true : false;
@@ -40,6 +40,12 @@ const getfeaturedProducts = async (req, res) => {
   }
 
   //pagination or limiting the results returned
+
+  const pageNumber = Number(page) || 1;
+  const limit = Number(req.query.limit) || 10;
+  const skip = (page - 1) * limit;
+
+  result = result.skip(skip).limit(limit);
 
   //await the result then send the response
   const products = await result;
