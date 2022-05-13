@@ -13,4 +13,10 @@ It is mainly tested via Postman and connected to MongoDb on Atlas
 
 ### 02-Store API project:
 
+This application is connected to Mongo DB on Atlas
+
 ### 03-JWT Basics project:
+
+JSON web token, the application checks username and password in post(login) request, if exists , create a new JWT and send it back to frontend <br/>
+it supports authentication where only the request with JWT can access the dashboard<br/>
+This application is not connected to Mongo DB
