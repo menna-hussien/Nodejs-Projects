@@ -1,7 +1,7 @@
 # Nodejs-Projects
 
 This repo contains nodejs projects as a part of my self learning projects in MERN stack path.<br/>
-Those projects are part of John smith's course/tutorial which i do highly recommend for any beginner in full stack development.
+Those projects are part of John smilga's course/tutorial which i do highly recommend for any beginner in full stack development.
 
 ## Below is a detailed discription for each project
 
@@ -12,3 +12,5 @@ The application is a task manager where you can easily track your tasks (add, ed
 It is mainly tested via Postman and connected to MongoDb on Atlas
 
 ### 02-Store API project:
+
+### 03-JWT Basics project:
